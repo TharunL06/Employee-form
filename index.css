@@ -1,0 +1,17 @@
+/* styles.css */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-control {
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}

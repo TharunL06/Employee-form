@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details Application</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="employeeForm">
+        <h1>Employee Details</h1>
+        <div class="input-control">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <div class="error" id="nameError"></div>
+        </div>
+        <div class="input-control">
+          <label for="age">Age:</label>
+          <input type="number" id="age" required />
+          <div class="error" id="ageError"></div>
+        </div>
+        <div class="input-control">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" required />
+          <div class="error" id="phoneError"></div>
+        </div>
+        <div class="input-control">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" required />
+          <div class="error" id="dobError"></div>
+        </div>
+        <div class="input-control">
+          <label for="ctc">CTC:</label>
+          <input type="number" id="ctc" required />
+          <div class="error" id="ctcError"></div>
+        </div>
+        <button type="button" onclick="addEmployee()">Add Employee</button>
+        <button type="button" onclick="editEmployee()">Edit Employee</button>
+        <button type="button" onclick="deleteEmployee()">
+          Delete Employee
+        </button>
+      </form>
+
+      <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Phone Number</th>
+                    <th>Date of Birth</th>
+                    <th>CTC</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody"></tbody>
+        </table>
+    </div>
+  </body>
+</html>
